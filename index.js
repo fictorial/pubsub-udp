@@ -71,7 +71,7 @@ function publish (client, clientKey, topic, messageData) {
     return
   }
 
-  const msg = JSON.stringify({ topic, data: messageData })
+  const msg = JSON.stringify({ type: 'pub', topic, data: messageData })
 
   for (let subscriberKey of topics.get(topic)) {
     debug('publish to %s for topic "%s"', subscriberKey, topic)
