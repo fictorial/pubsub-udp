@@ -1,0 +1,9 @@
+{
+  "name": "pubsub-udp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^3.1.0"
+  }
+}
